@@ -6,47 +6,48 @@ body {
   padding: 2rem;
 }
 
-h1 {
-  margin-bottom: 2rem;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 15px;
-  max-width: 1200px;
+  gap: 12px;
+  max-width: 1300px;
   margin: auto;
 }
 
 .ramo {
   padding: 1rem;
   border-radius: 10px;
-  background-color: #ddd;
-  border: 2px solid #ccc;
   cursor: pointer;
-  transition: all 0.3s ease;
-  user-select: none;
+  transition: transform 0.2s;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  background: #eee;
 }
 
 .ramo:hover {
   transform: scale(1.05);
 }
 
-.ramo.aprobado {
-  text-decoration: line-through;
-  background-color: #b7e4c7;
-  color: #4a4a4a;
-}
-
-.ramo.bloqueado {
+.bloqueado {
   background-color: #eee;
   color: #aaa;
-  border: 2px dashed #bbb;
-  cursor: not-allowed;
+  border: 1px dashed #ccc;
 }
 
-.ramo.desbloqueado {
-  background-color: #fef3bd;
-  border-color: #facc15;
-  font-weight: bold;
+.en-curso {
+  background-color: #f8c8dc;
+  color: #000;
+  border: 1px solid #f48fb1;
+}
+
+.aprobado {
+  background-color: #9575cd;
+  color: #fff;
+  text-decoration: line-through;
+  border: 1px solid #7e57c2;
 }
