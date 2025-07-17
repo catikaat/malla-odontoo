@@ -1,185 +1,207 @@
 <!DOCTYPE html><html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malla Interactiva Odonto UTAL</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Odontología UTAL - Cata</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff0f5;
+      color: #4d3a4e;
+    }.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  color: #ba8db8;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #c793ae;
+  margin-bottom: 30px;
+}
+
+.nivel {
+  margin-bottom: 40px;
+}
+
+.nivel h3 {
+  text-align: left;
+  margin: 20px 0 10px;
+  color: #a96db5;
+  border-bottom: 1px solid #e4c6e4;
+  padding-bottom: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.ramo {
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.ramo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pendiente { background: #fce5ec; border: 2px solid #f5b5d1; }
+.cursando { background: #f9d6e5; border: 2px solid #eaa7c5; }
+.aprobado { background: #e8d9f0; border: 2px solid #c5a2dd; }
+
+footer {
+  margin-top: 40px;
+  font-size: 12px;
+  color: #b48ab4;
+}
+
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>🦷 Catalina Barrientos</h1>
-    <h2>Malla Odontología - UTAL</h2><!-- NIVEL 1 -->
-<div class="semestre">
-  <button onclick="toggle('nivel1')">📘 Nivel 1</button>
-  <div class="contenido" id="nivel1">
-    <ul>
-      <li>Morfología General</li>
-      <li>Bases Biológicas y Bioquímicas</li>
-      <li>Química General y Orgánica</li>
-      <li>Salud Pública</li>
-      <li>Comunicación Oral y Escrita I</li>
-      <li>Idioma Extranjero I</li>
-      <li>Bioestadística Descriptiva</li>
-    </ul>
+    <h2>Malla Odontología UTAL - Plan 2015</h2><!-- NIVEL 1 (APROBADO) -->
+<div class="nivel">
+  <h3>Nivel 1</h3>
+  <div class="grid">
+    <div class="ramo aprobado">Morfología General</div>
+    <div class="ramo aprobado">Bases Biológicas y Bioquímicas</div>
+    <div class="ramo aprobado">Química General y Orgánica</div>
+    <div class="ramo aprobado">Salud Pública</div>
+    <div class="ramo aprobado">Comunicación Oral y Escrita I</div>
+    <div class="ramo aprobado">Idioma Extranjero I</div>
+    <div class="ramo aprobado">Bioestadística Descriptiva</div>
   </div>
 </div>
 
-<!-- NIVEL 2 -->
-<div class="semestre">
-  <button onclick="toggle('nivel2')">📗 Nivel 2</button>
-  <div class="contenido" id="nivel2">
-    <ul>
-      <li>Comunicación Oral y Escrita II</li>
-      <li>Idioma Extranjero II</li>
-      <li>Educación para la Salud</li>
-      <li>Introducción a la Clínica</li>
-    </ul>
+<!-- NIVEL 2 (APROBADO) -->
+<div class="nivel">
+  <h3>Nivel 2</h3>
+  <div class="grid">
+    <div class="ramo aprobado">Comunicación Oral y Escrita II</div>
+    <div class="ramo aprobado">Idioma Extranjero II</div>
+    <div class="ramo aprobado">Educación para la Salud</div>
+    <div class="ramo aprobado">Introducción a la Clínica</div>
   </div>
 </div>
 
-<!-- NIVEL 3 -->
-<div class="semestre">
-  <button onclick="toggle('nivel3')">📙 Nivel 3</button>
-  <div class="contenido" id="nivel3">
-    <ul>
-      <li>Patología Humana</li>
-      <li>Fisiología Humana</li>
-      <li>Microbiología</li>
-      <li>Biomateriales Dentales y Preclínico Integral I</li>
-      <li>Autogestión del Aprendizaje</li>
-      <li>Idioma Extranjero III</li>
-      <li>Inmunología</li>
-      <li>Anatomía de Cabeza y Cuello</li>
-    </ul>
+<!-- NIVEL 3 (APROBADO) -->
+<div class="nivel">
+  <h3>Nivel 3</h3>
+  <div class="grid">
+    <div class="ramo aprobado">Patología Humana</div>
+    <div class="ramo aprobado">Fisiología Humana</div>
+    <div class="ramo aprobado">Microbiología</div>
+    <div class="ramo aprobado">Biomateriales Dentales y Preclínico Integral I</div>
+    <div class="ramo aprobado">Autogestión del Aprendizaje</div>
+    <div class="ramo aprobado">Idioma Extranjero III</div>
+    <div class="ramo aprobado">Inmunología</div>
+    <div class="ramo aprobado">Anatomía de Cabeza y Cuello</div>
   </div>
 </div>
 
-<!-- NIVEL 4 -->
-<div class="semestre">
-  <button onclick="toggle('nivel4')">📒 Nivel 4</button>
-  <div class="contenido" id="nivel4">
-    <ul>
-      <li>Trabajo en Equipo y Desarrollo de Habilidades Sociales</li>
-      <li>Epidemiología</li>
-    </ul>
+<!-- NIVEL 4 (APROBADO) -->
+<div class="nivel">
+  <h3>Nivel 4</h3>
+  <div class="grid">
+    <div class="ramo aprobado">Trabajo en Equipo y Desarrollo de Habilidades Sociales</div>
+    <div class="ramo aprobado">Epidemiología</div>
   </div>
 </div>
 
-<!-- NIVEL 5 -->
-<div class="semestre">
-  <button onclick="toggle('nivel5')">📔 Nivel 5</button>
-  <div class="contenido" id="nivel5">
-    <ul>
-      <li>Patología y Diagnóstico Oral</li>
-      <li>Periodoncia</li>
-      <li>Cirugía Oral</li>
-      <li>Biomateriales Dentales y Preclínico Integral II</li>
-      <li>Fundamentos de Clínica Integral</li>
-      <li>Comprensión de Contextos Sociales</li>
-      <li>Imagenología</li>
-    </ul>
+<!-- NIVEL 5 (CURSANDO) -->
+<div class="nivel">
+  <h3>Nivel 5</h3>
+  <div class="grid">
+    <div class="ramo cursando">Patología y Diagnóstico Oral</div>
+    <div class="ramo cursando">Periodoncia</div>
+    <div class="ramo cursando">Cirugía Oral</div>
+    <div class="ramo cursando">Biomateriales Dentales y Preclínico Integral II</div>
+    <div class="ramo cursando">Fundamentos de Clínica Integral</div>
+    <div class="ramo cursando">Comprensión de Contextos Sociales</div>
+    <div class="ramo cursando">Imagenología</div>
   </div>
 </div>
 
-<!-- NIVEL 6 -->
-<div class="semestre">
-  <button onclick="toggle('nivel6')">📕 Nivel 6</button>
-  <div class="contenido" id="nivel6">
-    <ul>
-      <li>Comprensión de Contextos Culturales</li>
-      <li>Farmacología</li>
-    </ul>
+<!-- NIVEL 6 EN ADELANTE (PENDIENTE) -->
+<div class="nivel">
+  <h3>Nivel 6</h3>
+  <div class="grid">
+    <div class="ramo pendiente">Comprensión de Contextos Culturales</div>
+    <div class="ramo pendiente">Farmacología</div>
   </div>
 </div>
 
-<!-- NIVEL 7 -->
-<div class="semestre">
-  <button onclick="toggle('nivel7')">📓 Nivel 7</button>
-  <div class="contenido" id="nivel7">
-    <ul>
-      <li>Odontología Integral del Niño I</li>
-      <li>Odontología Integral del Adulto I</li>
-      <li>Ética y Responsabilidad Social</li>
-      <li>Administración en Salud</li>
-      <li>Bioética</li>
-    </ul>
+<div class="nivel">
+  <h3>Nivel 7</h3>
+  <div class="grid">
+    <div class="ramo pendiente">Odontología Integral del Niño I</div>
+    <div class="ramo pendiente">Odontología Integral del Adulto I</div>
+    <div class="ramo pendiente">Ética y Responsabilidad Social</div>
+    <div class="ramo pendiente">Administración en Salud</div>
+    <div class="ramo pendiente">Bioética</div>
   </div>
 </div>
 
-<!-- NIVEL 8 -->
-<div class="semestre">
-  <button onclick="toggle('nivel8')">📚 Nivel 8</button>
-  <div class="contenido" id="nivel8">
-    <ul>
-      <li>Responsabilidad Social</li>
-      <li>Odontogeriatría</li>
-      <li>Ortopedia Dentomaxilar</li>
-    </ul>
+<div class="nivel">
+  <h3>Nivel 8</h3>
+  <div class="grid">
+    <div class="ramo pendiente">Responsabilidad Social</div>
+    <div class="ramo pendiente">Odontogeriatría</div>
+    <div class="ramo pendiente">Ortopedia Dentomaxilar</div>
   </div>
 </div>
 
-<!-- NIVEL 9 -->
-<div class="semestre">
-  <button onclick="toggle('nivel9')">📒 Nivel 9</button>
-  <div class="contenido" id="nivel9">
-    <ul>
-      <li>Odontología Integral del Niño II</li>
-      <li>Odontología Poblacional</li>
-      <li>Odontología Integral del Adulto II</li>
-    </ul>
+<div class="nivel">
+  <h3>Nivel 9</h3>
+  <div class="grid">
+    <div class="ramo pendiente">Odontología Integral del Niño II</div>
+    <div class="ramo pendiente">Odontología Poblacional</div>
+    <div class="ramo pendiente">Odontología Integral del Adulto II</div>
   </div>
 </div>
 
-<!-- NIVEL 10 -->
-<div class="semestre">
-  <button onclick="toggle('nivel10')">📘 Nivel 10</button>
-  <div class="contenido" id="nivel10">
-    <ul>
-      <li>—</li>
-    </ul>
+<div class="nivel">
+  <h3>Nivel 11</h3>
+  <div class="grid">
+    <div class="ramo pendiente">Internado</div>
+    <div class="ramo pendiente">Gestión de Instituciones de Salud</div>
+    <div class="ramo pendiente">Proyecto de Memoria</div>
+    <div class="ramo pendiente">Estadística Inferencial</div>
   </div>
 </div>
 
-<!-- NIVEL 11 -->
-<div class="semestre">
-  <button onclick="toggle('nivel11')">📖 Nivel 11</button>
-  <div class="contenido" id="nivel11">
-    <ul>
-      <li>Internado</li>
-      <li>Gestión de Instituciones de Salud</li>
-      <li>Proyecto de Memoria</li>
-      <li>Estadística Inferencial</li>
-    </ul>
+<div class="nivel">
+  <h3>Nivel 12</h3>
+  <div class="grid">
+    <div class="ramo pendiente">Memoria</div>
   </div>
 </div>
 
-<!-- NIVEL 12 -->
-<div class="semestre">
-  <button onclick="toggle('nivel12')">📄 Nivel 12</button>
-  <div class="contenido" id="nivel12">
-    <ul>
-      <li>Memoria</li>
-    </ul>
-  </div>
-</div>
-
-<!-- NIVEL 98 (Deportes) -->
-<div class="semestre">
-  <button onclick="toggle('nivel98')">🎽 Deportes</button>
-  <div class="contenido" id="nivel98">
-    <ul>
-      <li>Deporte I</li>
-      <li>Deporte II</li>
-    </ul>
+<div class="nivel">
+  <h3>Extras</h3>
+  <div class="grid">
+    <div class="ramo aprobado">Deporte I</div>
+    <div class="ramo aprobado">Deporte II</div>
   </div>
 </div>
 
 <footer>Hecho con 💗 por Cata | UTAL 2025</footer>
 
-  </div>  <script>
-    function toggle(id) {
-      const contenido = document.getElementById(id);
-      contenido.style.display = contenido.style.display === 'block' ? 'none' : 'block';
-    }
-  </script></body>
+  </div>
+</body>
 </html>
